@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Editor Sl official website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">MD Editor Sl</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="https://www.youtube.com/channel/UCnEQlPYjd7xWYM3_fuPdmxw">Subscribe</a></li>
+        <li><a href="webCode/webCode.html">web Coding</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div class="allWebpage" onscroll="scrollElementDisplayNone">
+
+ 
+  	<h1 class="main_title_1">MD Editor Sl Official website</h1>
+
+  	<p class="main_title_2">Subscribe MD Editor Sl YouTube channel for watch next videos</p>
+
+
+	<div class="image-links">
+  		<a href="https://www.youtube.com/channel/UCnEQlPYjd7xWYM3_fuPdmxw" class="button">Subscribe</a>
+  		<a href="webCode/webCode.html" class="button">Web Coding</a>
+	</div>
+
+
+
+
+
+
+  </div>
+
+
+<div >
+
+
+<input class="tooltiptext" type="text" value="Hello World" id="myInput">
+
+<button class="tooltip" onclick="myFunction()">Copy text</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script type="text/javascript" >
+	function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+
+</script>
+
+
+
+
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+var scrollElement_1 = document.querySelector(.main_title_1)
+
+if onscroll() {
+	this.scrollY > 20 ? scrollElement_1.style.zIndex
+}
+
+
+    
+
+  </script>
+
+</body>
+</html>
