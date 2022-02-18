@@ -340,9 +340,9 @@ button.js-code-copy{
 .html-code-copy{
   margin-top: 50px;
 }
-.download-images{
+.download-images a{
     text-decoration: none;
     padding: 15px 10px;
-    background: sea-blue;
+    background: seablue;
     border-radious: 5px;
 }
