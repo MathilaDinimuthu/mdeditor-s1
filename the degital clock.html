@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MD Editor Sl Get the web codes of responsive navigation bar</title>
+  <link rel="stylesheet" type="text/css" href="random password genaraor.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="channel logo.png">
+
+</head>
+<body>
+
+
+  <nav class="navbar sticky">
+    <div class="content">
+      <div class="logo"><a href="#">MD Editor Sl</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="https://www.youtube.com/channel/UCnEQlPYjd7xWYM3_fuPdmxw">Subscribe</a></li>
+        <li><a href="webCode.html">web Coding</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+<html-cording>
+
+<h1 class="header-htmlCode">HTML Codes</h1>
+
+<button class="html-code-copy code-copy-style">Copy HTML code</button>
+
+<div class="html-cording" style="margin-top: 50px; float: left; white-space: pre; line-height: 1; background: #272822;">
+<style type="text/css">
+span {
+    font-family: 'Courier New';
+    font-size: 10pt;
+    color: #F8F8F2;
+}
+.sc0 {
+}
+.sc2 {
+    color: #AE81FF;
+}
+.sc3 {
+    color: #E6DB74;
+}
+.sc4 {
+    color: #E6DB74;
+}
+.sc5 {
+    color: #F92672;
+}
+.sc9 {
+    color: #000000;
+}
+.sc10 {
+    color: #F92672;
+}
+.sc11 {
+    color: #66D9EF;
+}
+</style>
+</head>
+<body>
+<div style="float: left; white-space: pre; line-height: 1; background: #272822; "><span class="sc5">from</span><span class="sc0"> </span><span class="sc11">tkinter</span><span class="sc0"> </span><span class="sc5">import</span><span class="sc0"> </span><span class="sc10">*</span><span class="sc0">
+</span><span class="sc5">from</span><span class="sc0"> </span><span class="sc11">tkinter</span><span class="sc10">.</span><span class="sc11">ttk</span><span class="sc0"> </span><span class="sc5">import</span><span class="sc10">*</span><span class="sc0"> 
+
+</span><span class="sc5">from</span><span class="sc0"> </span><span class="sc11">time</span><span class="sc0"> </span><span class="sc5">import</span><span class="sc0"> </span><span class="sc11">strftime</span><span class="sc0">
+
+</span><span class="sc11">root</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">Tk</span><span class="sc10">()</span><span class="sc0">
+</span><span class="sc11">root</span><span class="sc10">.</span><span class="sc11">title</span><span class="sc10">(</span><span class="sc3">"The Digital Clock"</span><span class="sc10">)</span><span class="sc0">
+
+</span><span class="sc5">def</span><span class="sc0"> </span><span class="sc9">time</span><span class="sc10">():</span><span class="sc0">
+        </span><span class="sc11">string</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">strftime</span><span class="sc10">(</span><span class="sc4">'%H:%M:%S %p'</span><span class="sc10">)</span><span class="sc0">
+        </span><span class="sc11">texttime</span><span class="sc10">.</span><span class="sc11">config</span><span class="sc10">(</span><span class="sc11">text</span><span class="sc10">=</span><span class="sc11">string</span><span class="sc10">)</span><span class="sc0">
+        </span><span class="sc11">texttime</span><span class="sc10">.</span><span class="sc11">after</span><span class="sc10">(</span><span class="sc2">1000</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc11">time</span><span class="sc10">)</span><span class="sc0">
+
+</span><span class="sc11">texttime</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">Label</span><span class="sc10">(</span><span class="sc11">root</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc11">font</span><span class="sc10">=(</span><span class="sc3">"ds-digital"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc2">60</span><span class="sc10">),</span><span class="sc0"> </span><span class="sc11">foreground</span><span class="sc10">=</span><span class="sc0"> </span><span class="sc3">"cyan"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc11">background</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc3">"#000"</span><span class="sc0"> </span><span class="sc10">)</span><span class="sc0">
+</span><span class="sc11">texttime</span><span class="sc10">.</span><span class="sc11">pack</span><span class="sc10">(</span><span class="sc11">anchor</span><span class="sc10">=</span><span class="sc4">'center'</span><span class="sc10">)</span><span class="sc0">
+</span><span class="sc11">time</span><span class="sc10">()</span><span class="sc0">
+</span><span class="sc11">mainloop</span><span class="sc10">()</span></div>
+
+<textarea class="html-codes">
+
+from tkinter import *
+from tkinter.ttk import* 
+
+from time import strftime
+
+root = Tk()
+root.title("The Digital Clock")
+
+def time():
+        string = strftime('%H:%M:%S %p')
+        texttime.config(text=string)
+        texttime.after(1000, time)
+
+texttime = Label(root, font=("ds-digital", 60), foreground= "cyan", background = "#000" )
+texttime.pack(anchor='center')
+time()
+mainloop()
+
+
+</textarea>
+
+
+
+
+</html-cording>
+
+
+<script type="text/javascript">
+document.querySelector(".html-code-copy").addEventListener("click", copyText);
+function copyText() {
+   var copyText = document.querySelector(".html-codes");
+   copyText.select();
+   copyText.setSelectionRange(0, 99999);
+   document.execCommand("copy");
+   alert("The copied text is: " + copyText.value);
+}
+</script>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="download-images">
+    <a href="https://drive.google.com/drive/folders/1FDX-oMIDJzobzPBGC4RTuTTR-PwGHegQ?usp=sharing" style="background: pink">Download Images</a>
+</div> 
+
+
+
+
+
+
+
+
+
+</body>
+</html>
